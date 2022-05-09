@@ -1,0 +1,289 @@
+/*This is the css file of the homepage*/
+/*It controls all the stylistic features including but not limited to the size and colour of specific features*/
+
+/*This is where the code begins*/
+
+/*This controls the first heading of the website which includes the logo that redirects the users to the homepage, the search bar, and the search button*/
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 105px;
+	background-color: rgb(185, 29, 1);
+}
+
+/*This controls the title of the page*/
+.title {
+  color: rgb(22, 192, 22);
+  font-size: 50px;
+  margin-left: 156px;
+  margin-top: 25;
+  font-family: monospace;
+}
+
+/*This controls where and how big the search button actually is*/
+.button {
+	margin-top: 34;
+	height: 40;
+  font-size: 15;
+}
+
+/*This controls where and how long the search bar is*/
+.search {
+	margin-top: 34;
+  margin-right: 40;
+	height: 40;
+  font-size: 15;
+}
+
+/*This controls where the logo is located on the website and the size of it*/
+.yinyang {
+  margin-left: 20;
+  padding: 18px;
+  height: 70px;
+	width: 70px;
+}
+
+/*This controls what is technically the second heading of the website, also the navigation bar*/
+.topnav {
+	background-color: rgb(118, 31, 20);
+  height: 105px;
+  width: 100%;
+}
+
+/*This controls the navigation bar's text's characteristics*/
+.topnav a {
+	height: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30;
+  font-family:monospace;
+}
+
+/*This controls where the footer is located*/
+.footing {
+  float: bottom;
+  width: 1424px;
+  height: 105px;
+  background-color: rgba(185, 29, 1);
+  font-family: monospace;
+}
+
+/*This controls the characteristics of the text inside the footer*/
+.references {
+  font-size: 30;
+  color: rgb(255, 255, 255);
+  padding: 32px;
+ }
+
+/*This controls the td and tr tags*/
+td
+{
+  text-align:center;
+  padding-top:32px;
+}
+
+/*This controls the formatting of the first layer*/
+.layer1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(220, 71, 1);
+}
+
+/*This controls the formatting of the second layer*/
+.layer2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(220, 71, 1);
+}
+
+/*This controls the video customizations*/
+.video {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 400px; 
+  height: 250px;
+}
+
+/*This controls the first body of text*/
+.text1 {
+  font-size: 20px;
+  width: 400px;
+  text-align: left;
+}
+
+/*This controls the second body of text*/
+.text2 {
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+/*This controls the third body of text*/
+.text3 {
+  font-size: 20px;
+  width: 400px;
+  text-align: right;
+}
+
+/*This controls the text regarding the historian image*/
+.historian {
+  margin-top: 25px;
+  width: 400px;
+  height: 250px;
+}
+
+/*This controls the text regarding the globalization image*/
+.globalization {
+  margin-top: 25px;
+  width: 400px;
+  height: 250px;
+}
+
+/*This controls where the interactive map is located*/
+.interMap {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*This controls the text that is beside the interactive map*/
+.mapText {
+  width: 450px;
+  text-align: right;
+}
+
+/*This controls the text regarding the Chinese dynasties*/
+.chineseDynasties {
+  text-align: center;
+}
+
+/*Also controls the text regarding the Chinese dynasties*/
+.dynastyInfo {
+  text-align: center;
+}
+
+/*Heading one's colour*/
+h1 {
+  color: rgb(0, 0, 0);
+}
+
+/*Modal text colour*/
+.modalText {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/*Flex container position in relation with others*/
+#flexContainer
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+/*Controls the text for the modal buttons*/
+.flexy1, .flexy2, .flexy3
+{
+    display:flex;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 25px;
+    margin-right: 25px;
+}
+
+/*Colour and sizing of the text*/
+.textTitles
+{
+    bottom: 90px;
+    left: 65px;
+    width: 350px;
+    font-size: 50px;
+    color: red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*Sizes of the modal buttons*/
+.modal-button1, .modal-button2, .modal-button3
+{
+    height: 420px;
+    width: 420px;
+}
+
+/*Animation and colour of the modal buttons*/
+.modal-image1
+{
+    background-color: rgb(255, 0, 0);
+    display:none;
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    height: 170px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.9s;
+    animation-name: animatetop;
+    animation-duration: 0.9s
+}
+
+/*Animation and colour of the modal buttons*/
+.modal-image2
+{
+    background-color: rgb(255, 0, 0);
+    display:none;
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    height: 170px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.9s;
+    animation-name: animatetop;
+    animation-duration: 0.9s
+}
+
+/*Animation and colour of the modal buttons*/
+.modal-image3
+{
+    background-color: red;
+    display:none;
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    height: 170px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.9s;
+    animation-name: animatetop;
+    animation-duration: 0.9s
+}
+
+/*Controls the close button styles*/
+.close-button1, .close-button2, .close-button3
+{
+    float: right;
+    color: rgb(0, 0, 0);
+    font-size: 24px;  
+    font-weight: bold;
+}
+
+/*What happens when you hover the close buttons*/
+.close-button1:hover, .close-button2:hover, .close-button3:hover
+{
+    color: rgb(255, 0, 0);
+    cursor: crosshair;
+}
+
+/*Controls the opacity animations when it appears and dissapears*/
+@-webkit-keyframes animatetop
+{
+    from {opacity:0}
+    to {opacity:1}
+}
+
+/*Controls the opacity animations when it appears and dissapears*/
+@keyframes animatetop
+{
+    from {opacity:0}
+    to {opacity:1}
+}
+
+/*This is where the code ends*/

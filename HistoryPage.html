@@ -1,0 +1,198 @@
+<!--Bill Han, Year 10, Computer Science Class, Unit 2-->
+
+<!--This is where the code begins-->
+<html>
+
+
+    <head>
+
+        <!--This is the name that appears on the tab-->
+        <title>
+            History Page
+        </title>
+        <!--This is the logo of the website which is a yin and yang logo-->
+        <link rel = "logo" href = "Yin_yang.svg.png">
+        <!--Links the CSS file to this file-->
+        <link rel = "stylesheet" href = "HistoryPage.css">
+
+    </head>
+
+
+    <body>
+
+        <!--This is the code for the first heading of the website-->
+        <div class = "heading">
+            <div>
+                <!--Logo function-->
+                <img onclick = "home();" src = "Yin_yang.svg.png" class = "yinyang">
+            </div>
+            <div>
+                <h1 class = "title"> Chinese Culture </h1>
+            </div>
+            <div>
+                <!--Search button function-->
+                <button onclick = "search();" id = "button" type = "button" class = "button">Search</button>
+                <!--Seach bar function-->
+                <input id = "search" type = "text" class = "search">
+            </div>
+
+	    </div>
+
+        <!--This is the code for the second heading of the website-->
+        <div class="topnav">
+            <table width = 100%>
+                <!--All of the redirected landing pages-->
+                <tr>
+                    <!--Used tr and td tags to centre the links and make them more even-->
+                    <td width = 33%>
+                        <div class = "link1">
+                                <a href = "LearningProcessPage.html">Learning Process</a>
+                        </div>
+                    </td>
+                    <td width = 33%>
+                        <div class = "link2">
+                            <a href = "CommunicationPage.html">Communication</a>
+                        </div>
+                    </td>
+                    <td width = 33%>
+                        <div class = "link3">
+                            <a href = "HistoryPage.html">History</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style = "padding-bottom: 50"></div>
+
+        <div class="layer1">
+
+            <!--These are the images and videos in the first layer of this page-->
+
+            <div>
+                <img src="9-badass-women-in-chinese-history.jpg" alt="Historian" class="Historian">
+            </div>
+
+            <div>
+                <iframe class = "video"
+                    src="https://www.youtube.com/embed/ylWORyToTo4">
+                </iframe>
+            </div>
+
+            <div>
+                <img src="chinese-globalization.png" alt="Globalization" class="Globalization">
+            </div>
+
+        </div>
+
+        <div style = "padding-bottom: 50"></div>
+
+        <div class="layer2">
+
+            <!--These are the photos and videos in the second layer of this page-->
+
+            <div>
+                <h3 class="text1">
+                    Chinese history has one of the longest written histories ever. Over 2,000 years of history has been documented which shapes the structure of Chinese culture and Chinese society. China has an interesting history with many dynasties, conflicts, and influences. Watch the video to the right to get a brief understanding of Chinese history over the last 2,000 years. 
+                </h3>
+            </div>
+
+            <div>
+                <h3 class="text2">
+                    Recent Chinese history has suffered from a lot of colonisation from the likes of Japan in the 20th century. This has in turn shaped the way Chinese society functions as Japan made many changes to Chinese culture and society, effectively changing how we communicate and act with each other. Lots of history has also tried to be erased by the Japanese during the colonisation period. 
+                </h3>
+            </div>
+
+            <div>
+                <h3 class="text3">
+                    Chinese history shapes the way that people communicate with each other because, historically, body language expresses feelings, emotions, and desires from Chinese people. It also changes the way people express themselves within the household because culture, identity, and religion dictates a lot of what is done in Chinese households.
+                </h3>
+            </div>
+
+        </div>
+
+        <div style = "padding-bottom: 50"></div>
+
+        <!--This is the interactive map on this page where the user can look at different historical locations-->
+
+        <div class="interMap">
+            <div>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1hThgR30iQI6oVDHByBbGqG4Dv9A&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
+
+            <div>
+                <p class="mapText">
+                    Within China’s boundaries exists a highly diverse and complex country. Its topography encompasses the highest and one of the lowest places on Earth, and its relief varies from nearly impenetrable mountainous terrain to vast coastal lowlands. Its climate ranges from extremely dry, desertlike conditions in the northwest to tropical monsoon in the southeast, and China has the greatest contrast in temperature between its northern and southern borders of any country in the world. The diversity of both China’s relief and its climate has resulted in one of the world’s widest arrays of ecological niches, and these niches have been filled by a vast number of plant and animal species. Indeed, practically all types of Northern Hemisphere plants, except those of the polar tundra, are found in China, and, despite the continuous inroads of humans over the millennia, China still is home to some of the world’s most exotic animals. Probably the single most identifiable characteristic of China to the people of the rest of the world is the size of its population. Some one-fifth of humanity is of Chinese nationality. The great majority of the population is Chinese (Han), and thus China is often characterized as an ethnically homogeneous country, but few countries have as wide a variety of indigenous peoples as does China. Even among the Han there are cultural and linguistic differences between regions; for example, the only point of linguistic commonality between two individuals from different parts of China may be the written Chinese language. Because China’s population is so enormous, the population density of the country is also often thought to be uniformly high, but vast areas of China are either uninhabited or sparsely populated.
+                </p>
+            </div>
+        </div>
+        
+        <div style = "padding-bottom: 50"></div>
+
+        <h1 class = "chineseDynasties">Recent Chinese Dynasties</h1>
+
+        <h3 class = "dynastyInfo"> Below are the three most recent major dynasties that took place in China. Each one of these dynasties have their own unique set of characteristics and ruling styles that have affected Chinese culture and lifestyle. The dynasties have affected interaction and communication in China. Read more about each one of the dynasties by clicking on them.</h3>
+
+
+        <!--This is the modal button code with three different images-->
+        <div id = "flexContainer">
+            <div id = "flexy1">
+                <!--Those two give them variable names-->
+                <div id = "modal-button1" style="position:relative">
+                    <!--Position of modal button-->
+                    <img id = "box" src="Yuan-dynasty.jpg" height="220px" width="420px">
+                    <!--Sizing of modal button-->
+                    <span class = "textTitles" style = "position: absolute;" >Yuan Dynasty</span>
+                </div>
+                <div class="modal-image1">
+                <span class="close-button1">&times;</span>
+                <!--Closing the modal button-->
+                <p class="modalText">Yuan dynasty, Wade-Giles romanization Yüan, also called Mongol dynasty, dynasty established by Mongol nomads that ruled portions and eventually all of China from the early 13th century to 1368. Mongol suzerainty eventually also stretched throughout most of Asia and eastern Europe, though the Yuan emperors were rarely able to exercise much control over their more distant possessions.</p>
+                <!--Modal text-->
+                </div>
+            </div>
+            <!--Same as the code above-->
+            <div id = "flexy2">
+                <div id = "modal-button2" style = "position: relative;">
+                    <img src = "Ming-dynasty.jpg" height="220px" width="420px">
+                    <span class = "textTitles" style = "position: absolute;" >Ming Dynasty</span>
+                </div>
+                <div class = "modal-image2">
+                <span class = "close-button2">&times;</span>
+                <p class="modalText">Ming dynasty, Wade-Giles romanization Ming, Chinese dynasty that lasted from 1368 to 1644 and provided an interval of native Chinese rule between eras of Mongol and Manchu dominance, respectively. During the Ming period, China exerted immense cultural and political influence on East Asia and the Turks to the west, as well as on Vietnam and Myanmar to the south.
+                </p>
+                </div>
+            </div>
+            <!--Same as the code above-->
+            <div id = "flexy3">
+                <div id = "modal-button3" style = "position: relative;">
+                    <img src = "Qing-dynasty.jpg" height="220px" width="420px">
+                    <span class = "textTitles" style = "position: absolute;" >Qing Dynasty</span>
+                </div>
+                <div class = "modal-image3">
+                <span class = "close-button3">&times;</span>
+                <p class="modalText">Qing dynasty, Wade-Giles romanization Ch'ing, also called Manchu dynasty or Pinyin Manzu, the last of the imperial dynasties of China, spanning the years 1644 to 1911/12. Under the Qing the territory of the empire grew to treble its size under the preceding Ming dynasty, the population grew from some 150 million to 450 million, many of the non-Chinese minorities within the empire were Sinicized, and an integrated national economy was established.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Moves the bottom down which essentially moves the footer down-->
+        <div style = "padding-bottom: 100"></div>
+
+        <section class = "footing">
+        
+            <!--This states all the major reference points-->
+            <p4 class = "references" style = "float: right;">Last published: 2022</p4>
+            <p4 class = "references" style = "float: left;">Author: Bill Han</p4>
+                
+        </section>
+
+    </body>
+
+    <!--Links the JavaScript file to this file-->
+    <script src= "HistoryPage.js"> </script>
+
+</html>
+
+<!--This is where the code ends-->

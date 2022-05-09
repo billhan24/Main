@@ -1,0 +1,198 @@
+<!--Bill Han, Year 10, Computer Science Class, Unit 2-->
+ 
+<!--This is where the code begins-->
+<html>
+ 
+ 
+   <head>
+ 
+       <!--This is the name that appears on the tab-->
+       <title>
+           Learning Process Page
+       </title>
+       <!--This is the logo of the website which is a yin and yang logo-->
+       <link rel = "logo" href = "Yin_yang.svg.png">
+       <!--Links the CSS file to this file-->
+       <link rel = "stylesheet" href = "LearningProcessPage.css">
+ 
+   </head>
+ 
+ 
+   <body>
+ 
+       <!--This is the code for the first heading of the website-->
+       <div class = "heading">
+           <div>
+               <!--Logo function-->
+               <img onclick = "home();" src = "Yin_yang.svg.png" class = "yinyang">
+           </div>
+           <div>
+               <h1 class = "title"> Chinese Culture </h1>
+           </div>
+           <div>
+               <!--Search button function-->
+               <button onclick = "search();" id = "button" type = "button" class = "button">Search</button>
+               <!--Seach bar function-->
+               <input id = "search" type = "text" class = "search">
+           </div>
+ 
+       </div>
+ 
+       <!--This is the code for the second heading of the website-->
+       <div class="topnav">
+           <table width = 100%>
+               <!--All of the redirected landing pages-->
+               <!--Td and tr tags which space out the links evenly-->
+               <tr>
+                   <td width = 33%>
+                       <div class = "link1">
+                               <a href = "LearningProcessPage.html">Learning Process</a>
+                       </div>
+                   </td>
+                   <td width = 33%>
+                       <div class = "link2">
+                           <a href = "CommunicationPage.html">Communication</a>
+                       </div>
+                   </td>
+                   <td width = 33%>
+                       <div class = "link3">
+                           <a href = "HistoryPage.html">History</a>
+                       </div>
+                   </td>
+               </tr>
+           </table>
+       </div>
+ 
+ 
+        <div style = "padding-bottom: 50"></div>
+ 
+        <!--Styling for the first layer which is a video and text-->
+        <div class="layer1">
+            <div>
+                <h1 class="videoText">
+                    The video to the right shows how Chinese people think and how they go about living. It takes you through the main points of Chinese lifestyle and why that is. The video is important to understand why Chinese people behave they way that they do.
+                </h1>
+            </div>
+ 
+           <div>
+               <iframe class = "video"
+                   src="https://www.youtube.com/embed/xD1nDGeiSAs">
+               </iframe>
+            </div>
+        </div>
+ 
+       <div style = "padding-bottom: 50"></div>
+ 
+        <!--Styling for the second layer which is a video and text-->
+       <div class="layer2">
+           <div>
+               <iframe class = "video"
+                   src="https://www.youtube.com/embed/l8wWoQ3_F00">
+               </iframe>
+           </div>
+          
+           <div>
+               <h1 class="videoText">
+                   The video to the left shows the working culture in China and how hard people work through all ages. Kids starting from six start to focus on school very heavily. Additionaly, many adults spend lots of time working to provide for their family.
+               </h1>
+           </div>
+       </div>
+ 
+ 
+       <div style = "padding-bottom: 50"></div>
+ 
+        <!--Styling for the third layer which is a video and text-->
+       <div class="layer3">
+           <div>
+               <h1 class="videoText">
+                   The video to the right shows the main points of Chinese ediquette. It is supposed to illustrate the main things to do and not do if you were to go to China. There are lots of mannerisms that Chinese people expect you to follow to show respect and courtesy.
+               </h1>
+           </div>
+ 
+           <div>
+               <iframe class = "video"
+                   src="https://www.youtube.com/embed/XDClJwGDkFk">
+               </iframe>
+           </div>
+       </div>
+ 
+       <div style = "padding-bottom: 50"></div>
+ 
+        <!--Writing for the test section of the page-->
+       <div class="testSection">
+ 
+           <div>
+                <!--Information on the quiz-->
+                <h3 class="testInfo">
+                   On the right, there is a quiz that will go through the main elements of Chinese culture. If you want to become more involved with Chinese culture, it is important that you understand how it works, as well as the main facts regarding Chinese culture. The content above will prepare you for the questions that will be asked in the quiz. The questions will be about the lifestyle, manners, and mindset of Chinese people. It is essential that you understand what it is like being in Chinese society in order to become more involved with the culture. It's important that you understand mannerisms so you know what Chinese people mean when they speak and when they use their body language that is unique to only them. The questions will be multiple choice questions that are related to the main aspects of Chinese culture and how China as a country is. This will help you be able to communicate with Chinese friends, family, and citizens even better. I urge you to learn more about Chinese culture as it is very interesting and there will always be more to learn since it is the longest written history ever.
+                </h3>
+                <br></br>
+                <!--Score explanations-->
+                <h3 class="testInfo">
+                    If you get 100% on this test, you have studied well and are most likely ready to move on to more intricate fields of Chinese culture.
+                </h3>
+                <h3 class="testInfo">
+                    If you get 75% on this test, you have a great understanding of Chinese culture, however, it could improve just a little bit. 
+                </h3>
+                <h3 class="testInfo">
+                    If you get 50% on this test, you still have work to do in terms of understanding, but you're getting the hang of it. 
+                </h3>
+                <h3 class="testInfo">
+                    If you get 25% on this test, you need to work a learn a lot more about Chinese culture in order for you to understand their life style. 
+                </h3>
+                <h3 class="testInfo">
+                    If you get 0% on this test, I really don't know what to say, you could've guessed every question and still got at least one right. 
+                </h3>
+
+           </div>
+ 
+           <div id="quizSection">
+ 
+               <div id="start">This is the Chinese culture quiz. In this quiz, there will be four questions regarding the working lifestyle, the mannerisms, and the culture of respect in China. To take the quiz again, refresh this page. You have fifteen seconds to answer each question before it automatically goes on to the next question. Each question will have three multiple choice answers with one of them being correct. Please click anywhere on this red box to continue.</div>
+               <div id="test" style="display: none">
+                <!--Doesn't show the questions until the container is clicked on-->
+                   <div id="question"></div>
+                   <div id="qImg"></div>
+                   <!--Choice ID's for each possible answer-->
+                   <div id="answers">
+                       <div class="answer" id="A" onclick="checkAnswer('A')"></div>
+                       <div class="answer" id="B" onclick="checkAnswer('B')"></div>
+                       <div class="answer" id="C" onclick="checkAnswer('C')"></div>
+                   </div>
+                   <!--Timer for the quiz for each question-->
+                   <div id="timer">
+                       <div id="timerNumber"></div>
+                       <div id="timing1"></div>
+                       <div id="timing2"></div>
+                   </div>
+                   <!--Shows the progress bar at the bottom of the quiz-->
+                   <div id="progress"></div>
+               </div>
+      
+               <div id="finalScore" style="display: none"></div>
+               <!--Score container which isn't shown until the test is complete-->
+           </div>
+ 
+       </div>
+
+       <!--Moves the bottom down which essentially moves the footer down-->
+       <div style = "padding-bottom: 100"></div>
+ 
+       <section class = "footing">
+      
+           <!--This states all the major reference points-->
+           <p4 class = "references" style = "float: right;">Last published: 2022</p4>
+           <p4 class = "references" style = "float: left;">Author: Bill Han</p4>
+              
+       </section>
+ 
+   </body>
+ 
+ 
+    <script src= "LearningProcessPage.js"> </script>
+    <!--Links the JavaScript file to this file-->
+  
+ 
+</html>
+ 
+<!--This is where the code ends-->

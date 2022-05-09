@@ -1,0 +1,293 @@
+/*This is the css file of the homepage*/
+/*It controls all the stylistic features including but not limited to the size and colour of specific features*/
+
+/*This is where the code begins*/
+
+/*This controls the first heading of the website which includes the logo that redirects the users to the homepage, the search bar, and the search button*/
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 105px;
+	background-color: rgb(185, 29, 1);
+}
+
+/*Controls the titles style features*/
+.title {
+  color: rgb(22, 192, 22);
+  font-size: 50px;
+  margin-left: 156px;
+  margin-top: 25;
+  font-family: monospace;
+}
+
+/*This controls where and how big the search button actually is*/
+.button {
+	margin-top: 34;
+	height: 40;
+  font-size: 15;
+}
+
+/*This controls where and how long the search bar is*/
+.search {
+	margin-top: 34;
+  margin-right: 40;
+	height: 40;
+  font-size: 15;
+}
+
+/*This controls where the logo is located on the website and the size of it*/
+.yinyang {
+  margin-left: 20;
+  padding: 18px;
+  height: 70px;
+	width: 70px;
+}
+
+/*This controls what is technically the second heading of the website, also the navigation bar*/
+.topnav {
+	background-color: rgb(118, 31, 20);
+  height: 105px;
+  width: 100%;
+}
+
+/*This controls the navigation bar's text's characteristics*/
+.topnav a {
+	height: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30;
+  font-family:monospace;
+}
+
+/*This controls where the footer is located*/
+.footing {
+  float: bottom;
+  width: 1424px;
+  height: 105px;
+  background-color: rgba(185, 29, 1);
+  font-family: monospace;
+}
+
+/*This controls the characteristics of the text inside the footer*/
+.references {
+  font-size: 30;
+  color: rgb(255, 255, 255);
+  padding: 32px;
+ }
+
+/*Td and tr tag styles*/
+td
+{
+  text-align:center;
+  padding-top:32px;
+}
+
+/*Controls the first layer's location and colour*/
+.layer1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(220, 71, 1);
+}
+
+/*Controls the second layer's location and colour*/
+.layer2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(220, 71, 1);
+}
+
+/*Controls the third layer's location and colour*/
+.layer3 {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(220, 71, 1);
+}
+
+/*Controls the location and sizing of the video*/
+.video {
+  width: 600px; 
+  height: 400px;
+  margin-top: 25px; 
+  margin-bottom: 25px;
+}
+
+/*Controls the text under the video's font, location, and sizing*/
+.videoText {
+  width: 500px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Make the whole test section into a flex box*/
+.testSection {
+  display: flex;
+}
+
+/*Controls the information on the left side*/
+.testInfo {
+  width: 650px;
+}
+
+/*Controls the position and colour of the quiz*/
+#quizSection{
+  margin : 20px auto;
+  background-color: rgb(220, 71, 1);
+  height: 700px;
+  width : 700px;
+  position: relative;
+}
+
+/*Controls how the starting screen looks like*/
+#start{
+  font-size: 1.5em;
+  font-weight: bolder;
+  height: 695.49px;
+  width : 695.49px;
+  border : 2px solid rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  color : rgb(0, 0, 0);
+}
+
+/*Controls how the starting screen looks like when it is being hovered over*/
+#start:hover{
+  border: 5px solid rgb(6, 212, 82);
+  color : rgb(6, 212, 82);
+}
+
+/*Controls the font, size, and location of the questions*/
+#question{
+  width:700px;
+  height : 125px;
+  position: absolute;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  top:50;
+}
+#question p{
+  margin : 0;
+  font-size: 1.25em;
+}
+
+/*Controls the question's images*/
+#qImg{
+  width : 200px;
+  height : 200px;
+  position: absolute;
+  left : 250px;
+  top : 120px;
+  border: 5px solid rgb(0, 0, 0);
+}
+#qImg img{
+  width : 200px;
+  height : 200px;
+  border-top-left-radius: 5px;
+}
+
+/*Controls the sizing and the positioning of the answers*/
+#answers{
+  width : 480px;
+  position: absolute;
+  left : 130;
+  top : 400px;
+}
+.answer{
+  display: inline-block;
+  width : 135px;
+  text-align: center;
+  border : 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  padding : 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Controls how the timer looks in the bottom left*/
+#timer{
+  position: absolute;
+  height : 100px;
+  width : 200px;
+  bottom : 120px;
+  left: 255px;
+  text-align: center;
+}
+
+/*Controls how the number looks in the bottom*/
+#timerNumber{
+  font-size: 3em;
+  color: white;
+}
+#timing1{
+  width : 150px;
+  height : 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left : 25px;
+}
+#timing2{
+  height : 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  margin-top : -10px;
+  margin-left : 25px;
+}
+
+/*Controls how the answers look when they are being hovered over*/
+.choice:hover{
+  border : 8px solid rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Controls how the progress bar looks like*/
+#progress{
+  width: 500px;
+  position: absolute;
+  bottom: 50px;
+  right: 265px;
+  padding: 5px;
+  text-align: right;
+}
+.prog{
+  width : 25px;
+  height : 25px;
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left : 5px;
+  margin-right : 5px;
+}
+
+/*Controls how the ending screen looks like*/
+#finalScore{
+  background-color: rgb(192, 32, 32);
+  opacity: 1;
+  height: 700px;
+  width : 700px;
+  border: 5px solid rgb(0, 0, 0);
+  position: relative;
+  display: none;
+}
+
+/*Places the final image on the screen*/
+#finalScore img{
+  position: absolute;
+  width: 700px;
+  height: 700px;
+}
+#finalScore p{
+  position: absolute;
+  display: block;
+  width : 59px;
+  height :59px;
+  top:40px;
+  left:325px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/*This is where the code ends*/

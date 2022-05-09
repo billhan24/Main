@@ -1,0 +1,185 @@
+<!--Bill Han, Year 10, Computer Science Class, Unit 2-->
+
+<!--This is where the code begins-->
+<html>
+
+
+    <head>
+
+        <!--This is the name that appears on the tab-->
+        <title>
+            Communication Page
+        </title>
+        <!--This is the logo of the website which is a yin and yang logo-->
+        <link rel = "logo" href = "Yin_yang.svg.png">
+        <!--Links the CSS file to this file-->
+        <link rel = "stylesheet" href = "CommunicationPage.css">
+
+    </head>
+
+
+    <body>
+
+        <!--This is the code for the first heading of the website-->
+        <div class = "heading">
+            <div>
+                <!--Logo function-->
+                <img onclick = "home();" src = "Yin_yang.svg.png" class = "yinyang">
+            </div>
+            <div>
+                <h1 class = "title"> Chinese Culture </h1>
+            </div>
+            <div>
+                <!--Search button function-->
+                <button onclick = "search();" id = "button" type = "button" class = "button">Search</button>
+                <!--Seach bar function-->
+                <input id = "search" type = "text" class = "search">
+            </div>
+
+	    </div>
+
+        <!--This is the code for the second heading of the website-->
+        <div class="topnav">
+            <table width = 100%>
+                <!--All of the redirected landing pages-->
+                <tr>
+                    <!--Used tr and td tags to centre the links and make them more even-->
+                    <td width = 33%>
+                        <div class = "link1">
+                                <a href = "LearningProcessPage.html">Learning Process</a>
+                        </div>
+                    </td>
+                    <td width = 33%>
+                        <div class = "link2">
+                            <a href = "CommunicationPage.html">Communication</a>
+                        </div>
+                    </td>
+                    <td width = 33%>
+                        <div class = "link3">
+                            <a href = "HistoryPage.html">History</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--This is my slideshow-->
+        <div class="chineseSlideshow">
+ 
+            <!--This is the first slide-->
+            <div class="mySlides fade" style = "display: block;">
+            <!--Gives the slide a slide number-->
+            <div class="numText">1 / 3</div>
+            <!--Source for the slide image-->
+            <img src="name-card-exchanging1.jpg" style="width:100%">
+            <!--Slide text-->
+            <div class="text">Handshakes are the standard, casual greeting. The grip tends to be lighter than the Western handshake and is also sustained for longer. In formal situations, people bow slightly or nod politely to greet one another formally. </div>
+            </div>
+       
+            <!--Same code as the first slide-->
+            <div class="mySlides fade">
+            <div class="numText">2 / 3</div>
+            <img src="Understanding_in_Xian_05461.jpg" style="width:100%">
+            <div class="text">As an extension of the need to maintain harmonious relations, the Chinese rely heavily on indirect communication. They rely less on words and are more attentive to posture, expression and tone of voice to draw meaning. Their speech is often ambiguous, and they may understate their point. The purpose of this is to maintain harmony throughout the conversation and prevent a loss of face on either end of the exchange.</div>
+            </div>
+       
+            <!--Same code as the second slide-->
+            <div class="mySlides fade">
+            <div class="numText">3 / 3</div>
+            <img src="Videos-for-Nonverbal-communication1.jpg" style="width:100%">
+            <div class="text">Standard Chinese (known as ‘putonghua’ or Mandarin) is based on the Beijing dialect and is the official national language. Most people can read, write and speak Mandarin as it is taught in schools. Chinese is a tonal language, meaning that a single word may have multiple meanings depending on how it is pronounced. For example, the word ‘ma’ can mean "scold", "linen", "horse", or "mother" depending on the tone used by the speaker.</div>
+            </div>
+       
+            <!--This is the code to switch slides-->
+            <!--This gives them the arrow shape-->
+            <a class="before" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!--Code for the dots at the bottom of the slideshow-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+ 
+        <div style = "padding-bottom: 50"></div>
+ 
+        <div class="modalButtons">
+            <!--Labels the modal and gives it an image source and sizing-->
+            <img id="myImage1" src="modalImage.jpg" alt="By and large, China’s media and entertainment industry is heavily regulated. Apart from a few sectors such as music, foreign investors are generally prohibited across the entire industry.
+            " width="300" height="200">
+
+            <!--The actual modal-->
+            <div id="myModal1" class="modal1">
+
+            <!--This is the close button for the modal, also uses javascript here-->
+            <span class="close-button1" onclick="document.getElementById('myModal1').style.display='none'">&times;</span>
+
+            <!--This is the image that appears when you click on the modal-->
+            <img class="modal-content1" id="img01">
+
+            <!--This is the text tha appears when you click on the modal-->
+            <div id="caption1"></div>
+            </div>
+
+            <!--This is the same code as the first modal button-->
+            <img id="myImage2" src="lucky_1.jpg" alt="Red is seen as a national color. The preference for red is deeply rooted in Chinese culture; it represents power, status, and confidence to ancient Chinese royalty, while to ordinary people, red means happiness, wealth, prosperity, and good luck.
+            " width="300" height="200">
+
+            <div id="myModal2" class="modal2">
+
+            <span class="close-button2" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+
+            <img class="modal-content2" id="img02">
+
+            <div id="caption2"></div>
+            </div>
+
+            <!--This is the same code as the first modal button-->
+            <img id="myImage3" src="thediplomat-2021-02-19-8.jpg" alt="Confucianism, Taoism, and Buddhism were the three main philosophies and religions of ancient China, which have individually and collectively influenced ancient and modern Chinese society.
+            " width="300" height="200">
+
+            <div id="myModal3" class="modal3">
+
+            <span class="close-button3" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+
+            <img class="modal-content3" id="img03">
+
+            <div id="caption3"></div>
+            </div>
+
+        </div>
+
+        <div style = "padding-bottom: 50"></div>
+
+        <div class="communicationInfo">
+            <!--These are the two paragraphs of text on the bottom of the page-->
+            <div>
+                <mannerisms class="h1"> One common thing that Chinese people do is click their tongues when they want to show irritation, frustration, and annoyance. This is to help the people around them understand that something can be done to make them feel more comfortable.</mannerisms>
+            </div>
+
+            <div>
+                <communitiveActions class="h1"> The way Chinese people use hand gestures as a way to communicate to each other is something that is understood across all parts of China. They use it to give others information or let them know what is going on. </communitiveActions>
+            </div>
+        </div>
+
+        <!--Moves the bottom down which essentially moves the footer down-->
+        <div style = "padding-bottom: 100"></div>
+
+        <section class = "footing">
+        
+            <!--This states all the major reference points-->
+            <p4 class = "references" style = "float: right;">Last published: 2022</p4>
+            <p4 class = "references" style = "float: left;">Author: Bill Han</p4>
+                
+        </section>
+        
+    </body>
+    
+    <script src= "CommunicationPage.js"> </script>
+    <!--Links the JavaScript file to this file-->
+
+</html>
+
+<!--This is where the code ends-->

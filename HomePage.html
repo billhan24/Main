@@ -1,0 +1,141 @@
+<!--Bill Han, Year 10, Computer Science Class, Unit 2-->
+
+<!--This is where the code begins-->
+<html>
+
+
+    <head>
+
+        <!--This is the name that appears on the tab-->
+        <title>
+            Chinese Culture
+        </title>
+        <!--This is the logo of the website which is a yin and yang logo-->
+        <link rel = "logo" href = "Yin_yang.svg.png">
+        <!--Links the JavaScript file to this file-->
+        <script src= "HomePage.js"> </script>
+        <!--Links the CSS file to this file-->
+        <link rel = "stylesheet" href = "HomePage.css">
+
+    </head>
+
+
+    <body>
+
+        <!--This is the code for the first heading of the website-->
+        <div class = "heading">
+            <div>
+                <!--Logo function-->
+                <img onclick = "home();" src = "Yin_yang.svg.png" class = "yinyang">
+            </div>
+            <div>
+                <h1 class = "title"> Chinese Culture </h1>
+            </div>
+            <div>
+                <!--Search button function-->
+                <button onclick = "search();" id = "button" type = "button" class = "button">Search</button>
+                <!--Seach bar function-->
+                <input id = "search" type = "text" class = "search">
+            </div>
+
+	    </div>
+
+        <!--This is the code for the second heading of the website-->
+        <div class="topnav">
+            <table width = 100%>
+                <!--All of the redirected landing pages-->
+                <!--Tr and td tags that space out and even the links-->
+                <tr>
+                    <td width = 33%>
+                        <div class = "link1">
+                                <a href = "LearningProcessPage.html">Learning Process</a>
+                        </div>
+                    </td>
+                    <td width = 33%>
+                        <div class = "link2">
+                            <a href = "CommunicationPage.html">Communication</a>
+                        </div>
+                    </td>
+                    <td width = 33%>
+                        <div class = "link3">
+                            <a href = "HistoryPage.html">History</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!--This is the code for all the content on the page-->
+        <section class = "content">
+
+            <!--Flip box and the picture on the front-->
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="Temple.png" alt="Chinese History" style="width:300px;height:300px">
+                    <!--Size of the flip box-->
+                </div>
+                <div class="flip-box-back">
+                    <h2>Chinese History</h2>
+                    <p2>Chinese history influences their way of living. It continues to build off of their own history which, in turn, affects many aspects of their life and how they go through their everyday lives. Chinese history is one of the oldest written histories ever.</p2>
+                    <!--Text on the back of the flip box-->
+                </div>
+                </div>
+            </div>
+  
+            <!--Flip box and the picture on the front-->
+            <div class="flip-box2">
+                <div class="flip-box-inner2">
+                <div class="flip-box-front2">
+                    <img src="Lanterns.png" alt="Chinese Celebrations" style="width:300px;height:300px">
+                    <!--Size of the flip box-->
+                </div>
+                <div class="flip-box-back">
+                    <h2>Chinese Celebrations</h2>
+                    <p3>Chinese celebrations are a direct reflection of their morals and values. What chinese people celebrate shows the types of things that they value on a regular basis. For example, dragons, the colour red, and lots of food are things that they believe help to drive Chinese soceity.</p3>
+                    <!--Text on the back of the flip box-->
+                </div>
+                </div>
+            </div>
+
+            <!--Code for the text inside the content section-->
+            <section class = "innerbox">
+                <p1 class = "hook">
+                    Chinese culture has been around for almost 3000 years. It shapes the way Chinese people express their emotions and communication with each other. The purpose of this website is to educate and teach you about China's culture and how it impacts their culture, communication, mannerisms, and traditional values. Chinese culture has so many unique and interesting aspects to it, I encourage you to learn more.
+                </p1>
+            </section>
+
+        </section>
+
+        <!--First video on this page-->
+        <div class = "informational">
+
+            <iframe class = "video"
+            src="https://www.youtube.com/embed/NBVuHhCPFxE">
+            </iframe>
+
+            <!--Writing by the first video on this page-->
+            <!--Introduces the users to the website-->
+            <h1 class = "writing">Chinese culture has affected the way Chinese people talk since the beginning of China's history. The way that they communicate is unique and helps them to convey emotion in their own way. Without Chinese culture, a lot of information would get lost in translation with how they feel.</h1>
+
+        </div>
+
+        <!--Moves the bottom down which essentially moves the footer down-->
+        <div style = "padding-bottom: 100"></div>
+
+        <section class = "footing">
+
+            <!--This states all the major reference points-->
+            <p4 class = "references" style = "float: right;">Last published: 2022</p4>
+            <p4 class = "references" style = "float: left;">Author: Bill Han</p4>
+        
+        </section>
+
+
+    </body>
+    
+
+</html>
+
+<!--This is where the code ends-->

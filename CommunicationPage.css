@@ -1,0 +1,461 @@
+/*This is the css file of the homepage*/
+/*It controls all the stylistic features including but not limited to the size and colour of specific features*/
+
+/*This is where the code begins*/
+
+/*This controls the first heading of the website which includes the logo that redirects the users to the homepage, the search bar, and the search button*/
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 105px;
+	background-color: rgb(185, 29, 1);
+}
+
+/*This controls the title's style*/
+.title {
+  color: rgb(22, 192, 22);
+  font-size: 50px;
+  margin-left: 156px;
+  margin-top: 25;
+  font-family: monospace;
+}
+
+/*This controls how the title looks when you hover over it*/
+.title:hover {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+/*This controls where and how big the search button actually is*/
+.button {
+	margin-top: 34;
+	height: 40;
+  font-size: 15;
+}
+
+/*This controls where and how long the search bar is*/
+.search {
+	margin-top: 34;
+  margin-right: 40;
+	height: 40;
+  font-size: 15;
+}
+
+/*This controls where the logo is located on the website and the size of it*/
+.yinyang {
+  margin-left: 20;
+  padding: 18px;
+  height: 70px;
+	width: 70px;
+}
+
+/*This controls what is technically the second heading of the website, also the navigation bar*/
+.topnav {
+	background-color: rgb(118, 31, 20);
+  height: 105px;
+  width: 100%;
+}
+
+/*This controls the navigation bar's text's characteristics*/
+.topnav a {
+	height: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30;
+  font-family:monospace;
+}
+
+/*This controls where the footer is located*/
+.footing {
+  float: bottom;
+  width: 1424px;
+  height: 105px;
+  background-color: rgba(185, 29, 1);
+  font-family: monospace;
+}
+
+/*This controls the characteristics of the text inside the footer*/
+.references {
+  font-size: 30;
+  color: rgb(255, 255, 255);
+  padding: 32px;
+ }
+
+/*Controls the td and tr tags*/
+td
+{
+  text-align:center;
+  padding-top:32px;
+}
+
+/*Where and how big the slideshow container is*/
+.chineseSlideshow {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/*Keeps the images hidden until clicked on*/
+.mySlides {
+  display: none;
+}
+
+/*What happens when the user clicks on the arrow*/
+.before, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*The button moves on to the next image to the right*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*Makes the arrow background darker when it's hovered over*/
+.before:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Controls how the text looks*/
+.text {
+  color: #e90d0d;
+  font-size: 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*Controls how the numbers in the corner look*/
+.numText {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*Controls how the dots at the bottom look*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/*Controls how the dots look when they're being hovered over*/
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Controls the animation when the user clicks next*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*Controls the opacity animation when the user clicks next*/
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Modal button locations*/
+.modalButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*How the images looks when it's clicked on*/
+#myImage1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*Hovering animation*/
+#myImage1:hover {opacity: 0.7;}
+
+/*What happens to the modal when it is and isn't activated*/
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+/*What the modal shows when it's clicked*/
+.modal-content1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/*What the caption on the modal button is*/
+#caption1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/*Animation for the modal on zoom*/
+.modal-content1, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/*Zoom scale animation*/
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+/*Zoom scale animation*/
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/*Controls how the close button looks*/
+.close-button1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/*Controls how the close button looks when it is being hovered over*/
+.close-button1:hover,
+.close-button1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Scaling and width of the button*/
+@media only screen and (max-width: 700px){
+  .modal-content1 {
+      width: 100%;
+  }
+}
+
+/*Same code as the first modal button, but with different names*/
+#myImage2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImage2:hover {opacity: 0.7;}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content2, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close-button2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-button2:hover,
+.close-button2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content2 {
+      width: 100%;
+  }
+}
+
+/*The exact same code as the first the modal buttons, but with different names and sizes*/
+#myImage3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImage3:hover {opacity: 0.7;}
+
+.modal3 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content3, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close-button3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-button3:hover,
+.close-button3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content3 {
+      width: 100%;
+  }
+}
+
+/*Style for the text at the bottom*/
+.communicationInfo {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(219, 72, 14);
+  height: 255;
+}
+
+/*Style for the first heading*/
+.h1 {
+  display: flex;
+  font-size: 25px;
+  color:rgb(22, 192, 22);
+  font-family: monospace;
+  justify-content: space-around;
+  width: 600px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+
+/*This is where the code ends*/
